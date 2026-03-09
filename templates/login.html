@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome | SmartShop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background: #f3f0f7; color: #5a4a6b; height: 100vh; display: flex; align-items: center; justify-content: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        .login-card { background: white; padding: 50px; border-radius: 40px; width: 450px; box-shadow: 0 25px 50px -12px rgba(90, 74, 107, 0.15); border: 4px solid #fff; }
+        .btn-primary { background: #9d8db5; border: none; padding: 15px; border-radius: 20px; font-weight: 600; transition: 0.3s; }
+        .btn-primary:hover { background: #8a79a3; transform: scale(1.02); }
+        .form-control { border-radius: 15px; border: 2px solid #eee; padding: 12px; }
+        .logo-text { color: #9d8db5; font-weight: 800; letter-spacing: -1px; }
+    </style>
+</head>
+<body>
+    <div class="login-card text-center">
+        <h1 class="logo-text mb-2">SmartShop.ai</h1>
+        <p class="text-muted mb-4 small fw-bold">YOUR PERSONAL AI STYLE CONCIERGE</p>
+        <form action="/login" method="POST">
+            <input type="text" name="username" class="form-control mb-4" placeholder="Enter your name..." required>
+            <button type="submit" class="btn btn-primary w-100 shadow-sm text-white">Start Your Experience</button>
+        </form>
+    </div>
+</body>
+</html>
